@@ -1,3 +1,11 @@
 /* CSS Style Sheet */
 
+html, body {
+    margin: 8px;
+    margin-left: 25%;
+}
 
+hr {
+    background-color: gray;
+    outline: none;
+}
