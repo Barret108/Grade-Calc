@@ -1,11 +1,28 @@
-/* CSS Style Sheet */
-
-html, body {
-    margin: 8px;
-    margin-left: 25%;
+body {
+    width: 40vw;
+    margin: auto;
+    font-family: sans-serif
 }
 
-hr {
-    background-color: gray;
-    outline: none;
+p {
+    font-size: 2.2vh;
+}
+
+input {
+    width: 5vh;
+    height: 2vh;
+}
+
+button {
+    height: 4vh;
+    padding: 0 1.5vh;
+    border-width: .4vh;
+    border-radius: 1.8vh;
+    background-color: yellow;
+    color: black;
+}
+
+button:hover {
+    background-color: greenyellow;
+    cursor: pointer;
 }
