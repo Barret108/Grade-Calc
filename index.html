@@ -3,7 +3,6 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
   </head>
   <body>
     <h1>CS10 Grade Calculator</h1>
@@ -12,13 +11,14 @@
     <p>Your grade for Computing Science 10 will be the <strong>average</strong> of your grades on <br>five individual CTS modules.</p>
       <hr>
     <h2>Enter Grades</h2>
-      <p>Client-Side Scripting 1: <input type="number">%</p>
-      <p>Structured Programming 1: <input type="number">%</p>
-      <p>Sturctured Programming 2: <input type="number">%</p>
-      <p>Client-Side Scripting 2: <input type="number">%</p>
-      <p>Project A: <input type="number">%</p>
-    <button>Calculate CS10 Grade</button>
+      <p>Client-Side Scripting 1: <input id="dg1" type="number" min="0" max="100">%</p>
+      <p>Structured Programming 1: <input id="dg2" type="number" min="0" max="100">%</p>
+      <p>Sturctured Programming 2: <input id="dg3" type="number" min="0" max="100">%</p>
+      <p>Client-Side Scripting 2: <input id="dg4" type="number" min="0" max="100">%</p>
+      <p>Project A: <input id="dg5" type="number" min="0" max="100">%</p>
+    <button id="btn" onclick="myScore()">Calculate CS10 Grade</button>
       <hr>
-    <h1>Final CS10 Grade: -----%</h1>
+    <h1>Final CS10 Grade: <span id="scorePercent">-----</span>%</h1>
+    <script src="main.js"></script>
   </body>
 </html>
